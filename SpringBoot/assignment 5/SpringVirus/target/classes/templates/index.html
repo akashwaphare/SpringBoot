@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #h1 {
+            border-bottom: 2px solid black;
+
+        }
+
+        input {
+            margin: 6px;
+
+            border-radius: 5px;
+        }
+
+        .button {
+            background-color: rgb(42, 42, 105);
+            border: none;
+            color: white;
+            text-align: center;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 12px 10rem; 
+         }
+        
+    </style>
+</head>
+<body  style="text-align: center;">
+
+
+ 
+ <div style="text-align: center;">
+ 
+ <div>
+ 
+ <form action="login" method="post">
+        <div id="h1">
+            <h1>Catseye Virus Path Lab</h1>
+        </div><br><br>
+        <div>
+            <label>virus pattern : </label>
+            <input type="text" name="virusname" required> <br><br>
+            <label>No of Patients :</label>
+           <input type="text" id="count" name="count" required onchange="getnumber()"><br><br>
+        </div>
+        
+        <div>
+            <fieldset>
+                <legend><b> Blood Sample</b></legend>
+                <label>patient 1 Sample pattern :</label>
+                <input type="text" name="sample1" /><br><br>
+
+                <label>patient 2 Sample pattern :</label>
+                <input type="text" name="sample2" /><br><br>
+
+                <label>patient 3 Sample pattern :</label>
+                <input type="text" name="sample3" /><br><br>
+
+                <button class="button" href="result.html">send For Testing </button>
+
+            </fieldset>
+        </div>
+        </form>
+ </div>
+</div>
+</body>
+</html>

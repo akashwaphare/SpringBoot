@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    th{
+            background-color: rgb(31, 31, 104);
+            color: white;
+        }
+        tr{
+            color: white;
+        }
+        fieldset{
+            border-radius: 10px;
+        }
+        </style>
+</head>
+<body>
+<div>
+     <div style="text-align: center;">
+            <fieldset>
+                <legend><b>Patient Report</b></legend>
+                <div style="text-align: center;">
+                <table>
+                    <tr>
+                        <th>Icons</th>
+                        <th>Patient Numbers</th>
+                        <th>Sample pattern</th>
+                        <th>Result</th>
+                    </tr>
+                    <tr style="background-color:rgb(141, 141, 230);">
+                        <td> </td>
+                        <td> Patient 1 </td>
+                        <td>${patient.sample1} </td>
+                        <td> ${patient.samplereport1}</td>
+                    </tr>
+                    <tr style="background-color: rgb(170, 170, 233);">
+                        <td> </td>
+                        <td>Patient 2 </td>
+                        <td> ${patient.sample2}</td>
+                        <td> ${patient.samplereport2}</td>
+                    </tr>
+                    <tr style="background-color: rgb(141, 141, 230);">
+                        <td> </td>
+                        <td> Patient 3 </td>
+                        <td>${patient.sample3} </td>
+                        <td> ${patient.samplereport3}</td>
+                    </tr>
+
+                </table>
+                </div>
+            </fieldset>
+        </div>
+ </div>
+</body>
+
+</html>
